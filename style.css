@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: beige;
+  font-family: Microsoft JhengHei;
+}
+#wrapper {
+  margin: 0px auto;
+  width: 1024px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 305px 1fr;
+}
+header{
+  grid-column:1/3;
+  grid-row: 1/2;
+}
+nav {
+  background-color: #b63d32;
+}
+ul {
+  display: flex;
+  margin: 0px;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+  flex-direction: column;
+}
+li a {
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+li a:hover {
+  color: #ffc90e;
+}
+#content_in {
+  padding: 30px 50px;
+  text-align: center;
+  background-color: #f4f4ed;
+}
+#content h1 {
+  color: #b63d32;
+  margin-bottom: 10px;
+}
+#content_in p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#content_in a {
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: #b63d32;
+  color: #ffffff;
+}
+footer {
+  background-color: #71552a;
+  text-align: center;
+  grid-column: 1/3;
+}
+footer p {
+  font-size: 10px;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  li a {
+    padding: 10px;
+  }
+}
+#Logo img {
+  width: 100%;
+  height: 250px;
+}
+#sidebar {
+  background-color: #ffe634;
+  display: grid;
+  grid-column:1/2 ;
+  grid-row: 2/3;
+*}
+#sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#sidebar li {
+  float: none;
+}
+#sidebar li a {
+  color: #000000;
+ padding: 10px 0px;
+  border-style: solid;
+  border-color: #b63d32;
+  margin: 40px;
+}
+#sidebaar li a :hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+  
